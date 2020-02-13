@@ -78,7 +78,7 @@
                   <Font name="Monospaced" size="18" style="3"/>
                 </Property>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="JavaOS is a simulation of a Operating System&#xa;&#xa;It is developed by &#xa;Harsh Agrawal&#xa;Student - Btech CS 2nd Year"/>
+                <Property name="text" type="java.lang.String" value="JavaOS is a simulation of an Operating System&#xa;&#xa;It is developed by :&#xa;Harsh Agrawal&#xa;Student - Btech CS 2nd Year"/>
               </Properties>
             </Component>
           </SubComponents>

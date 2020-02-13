@@ -5,6 +5,8 @@
  */
 package javaos;
 
+import com.sun.glass.events.KeyEvent;
+import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 
 /**
@@ -58,6 +60,12 @@ public class FirstPage extends javax.swing.JFrame {
         jLabel1.setText("Username");
 
         jLabel2.setText("Password");
+
+        jPasswordField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPasswordField1KeyPressed(evt);
+            }
+        });
 
         jTextField3.setEditable(false);
         jTextField3.setBackground(new java.awt.Color(255, 255, 255));
@@ -127,7 +135,12 @@ public class FirstPage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-String pass = jPasswordField1.getText().trim();
+authentication();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void authentication()
+    {
+        String pass = jPasswordField1.getText().trim();
  String user = jTextField1.getText().trim();
  if(user.equals("harsh")&&pass.equals("password") )
  {
@@ -154,8 +167,9 @@ String pass = jPasswordField1.getText().trim();
          jPasswordField1.setText("");
        }
  }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
+    
+    
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
@@ -163,6 +177,13 @@ String pass = jPasswordField1.getText().trim();
     private void jButton1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jButton1StateChanged
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1StateChanged
+
+    private void jPasswordField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField1KeyPressed
+       if(evt.getKeyCode()==KeyEvent.VK_ENTER)
+       {
+           authentication();
+       }
+    }//GEN-LAST:event_jPasswordField1KeyPressed
 
     
     public static void main(String args[]) {

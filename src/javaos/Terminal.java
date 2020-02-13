@@ -127,11 +127,10 @@ public class Terminal extends javax.swing.JFrame {
             stdin = new PrintWriter(res.getOutputStream());
             stdin.println(requested_command);
             
-            stdin.println("Reopen the terminal for executing more commands");
             jTextArea2.setEditable(false);
             stdin.close();
-            //res.waitFor();
-        } catch (IOException ex) {
+            res.waitFor();
+        } catch (IOException | InterruptedException ex) {
             Logger.getLogger(Terminal.class.getName()).log(Level.SEVERE, null, ex);
         }
             

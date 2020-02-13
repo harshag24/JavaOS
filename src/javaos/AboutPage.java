@@ -39,7 +39,7 @@ public class AboutPage extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Monospaced", 3, 18)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setText("JavaOS is a simulation of a Operating System\n\nIt is developed by \nHarsh Agrawal\nStudent - Btech CS 2nd Year");
+        jTextArea1.setText("JavaOS is a simulation of an Operating System\n\nIt is developed by :\nHarsh Agrawal\nStudent - Btech CS 2nd Year");
         jScrollPane1.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
