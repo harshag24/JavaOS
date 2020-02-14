@@ -122,7 +122,7 @@ public class Terminal extends javax.swing.JFrame {
             Process res = Runtime.getRuntime().exec(command);
             new Thread(new SyncPipe(res.getErrorStream(), System.err)).start();
             new Thread(new SyncPipe(res.getInputStream(), System.out)).start();
-
+            
             PrintWriter stdin;
             stdin = new PrintWriter(res.getOutputStream());
             stdin.println(requested_command);
