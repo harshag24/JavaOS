@@ -5,8 +5,14 @@
  */
 package javaos;
 
-import com.sun.glass.events.KeyEvent;
+
 import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JOptionPane;
 
 /**
@@ -135,10 +141,14 @@ public class FirstPage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-authentication();
+        try {
+            authentication();
+        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
+            Logger.getLogger(FirstPage.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void authentication()
+    private void authentication() throws UnsupportedAudioFileException, IOException, LineUnavailableException
     {
         String pass = jPasswordField1.getText().trim();
  String user = jTextField1.getText().trim();
@@ -181,7 +191,11 @@ authentication();
     private void jPasswordField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField1KeyPressed
        if(evt.getKeyCode()==KeyEvent.VK_ENTER)
        {
-           authentication();
+           try {
+               authentication();
+           } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
+               Logger.getLogger(FirstPage.class.getName()).log(Level.SEVERE, null, ex);
+           }
        }
     }//GEN-LAST:event_jPasswordField1KeyPressed
 
