@@ -173,7 +173,7 @@
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\harsh\OneDrive\Desktop\OS\untitled.png"/>
+              <Image iconType="3" name="/resource/untitled.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jButton3"/>
           </Properties>
@@ -184,7 +184,7 @@
         <Component class="javax.swing.JButton" name="jButton4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\harsh\OneDrive\Desktop\OS\about.png"/>
+              <Image iconType="3" name="/resource/about.png"/>
             </Property>
           </Properties>
           <Events>
@@ -200,7 +200,7 @@
               <Color blue="ff" green="ff" red="99" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\harsh\OneDrive\Desktop\OS\notepad.png"/>
+              <Image iconType="3" name="/resource/notepad.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -245,7 +245,7 @@
               <Color blue="ff" green="ff" red="99" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\harsh\OneDrive\Desktop\OS\browser.png"/>
+              <Image iconType="3" name="/resource/browser.png"/>
             </Property>
           </Properties>
           <Events>

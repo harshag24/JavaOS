@@ -64,7 +64,7 @@ public class MainPage extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("My Computer");
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\harsh\\OneDrive\\Desktop\\OS\\untitled.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/untitled.png"))); // NOI18N
         jButton3.setText("jButton3");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,7 +72,7 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\harsh\\OneDrive\\Desktop\\OS\\about.png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/about.png"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -81,7 +81,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(153, 255, 255));
         jButton2.setForeground(new java.awt.Color(153, 255, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\harsh\\OneDrive\\Desktop\\OS\\notepad.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/notepad.png"))); // NOI18N
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -109,7 +109,7 @@ public class MainPage extends javax.swing.JFrame {
         });
 
         jButton6.setBackground(new java.awt.Color(153, 255, 255));
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\harsh\\OneDrive\\Desktop\\OS\\browser.png")); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/browser.png"))); // NOI18N
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
