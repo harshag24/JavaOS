@@ -1,4 +1,7 @@
 # JavaOS
  Project for OS
  A Simulation of real world Operating System
- ![Desktop](https://github.com/harshag24/JavaOS/tree/master/images/Desktop.png)
+ Here is what is it looks like 
+ 
+ 1. Desktop -
+ ![](images/Desktop.png)
