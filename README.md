@@ -27,3 +27,5 @@
  ![](images/About.png)
  
  7. Browser - It opens up Microsoft edge browser with www.google.com as its default page.
+ 
+ To use this on your computer run FirstPage.java and enter username - "harsh" and password - "password"
