@@ -5,12 +5,15 @@
  */
 package javaos;
 
+import static javaos.AboutPage.priority;
+
 /**
  *
  * @author harsh
  */
 public class MyComputer extends javax.swing.JFrame {
 
+    public static int priority = 10;
     /**
      * Creates new form MyComputer
      */
@@ -164,7 +167,12 @@ public class MyComputer extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MyComputer().setVisible(true);
+                MyComputer frame = new MyComputer();
+                if( ProcessScheduler.priorityCheck(priority))
+                    frame.setVisible(true);
+                else
+                    System.out.println("Memory Full");
+                
             }
         });
     }

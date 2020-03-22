@@ -19,9 +19,7 @@ import java.util.logging.Logger;
  */
 public class Terminal extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Terminal
-     */
+    public static int priority = 8;
     public Terminal() {
         initComponents();
     }

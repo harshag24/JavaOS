@@ -4,11 +4,12 @@ import java.awt.Desktop;
 import java.io.File;
 
 public class Console {
+    public static int priority = 7;
  static Runtime rs =Runtime.getRuntime();
  static Desktop desktop = Desktop.getDesktop();
  static File folderToOpen;
     static void  runNotepad() {
-       
+        
      try{
          rs.exec("notepad");
      }
