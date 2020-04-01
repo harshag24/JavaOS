@@ -1,6 +1,6 @@
 # JavaOS
- A Simulation of real world Operating System\
- Here is what is it looks like 
+ It's a Simulation of an Operating System\
+ Have a look at some of it's snapshots: 
  
  1.Login -
  ![](images/login.png)
@@ -26,9 +26,14 @@
  6. About 
  ![](images/About.png)
  
- 7. Browser - It opens up Microsoft edge browser with www.google.com as its default page.
+ 7. Music Player
  
-
+ ![](images/MusicList.png)
  
+ 8. Video Player
+ 
+ ![](images/VideoList.png)
+ 
+ 9. Browser - It opens up Microsoft edge browser with www.google.com as its default page.
  
  To use this on your computer run FirstPage.java and enter username - "harsh" and password - "password"
