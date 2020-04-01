@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package javaos;
 
@@ -16,13 +11,9 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author harsh agrawal
- */
 public class Music {
     public  void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
-        music("Music\\\\StartSound.wav");
+     
     }
       public static void music(String song)throws UnsupportedAudioFileException, 
         IOException, LineUnavailableException 
@@ -30,12 +21,9 @@ public class Music {
         InputStream str;
         try
         {
-//            str = new FileInputStream(new File(song));
+
             AudioInputStream  audioInputStream =  
-                AudioSystem.getAudioInputStream(new File(song).getAbsoluteFile());
-//            AudioStream audios = new  AudioStream(str);
-//            AudioPlayer.player.start(audios);
-            
+            AudioSystem.getAudioInputStream(new File(song).getAbsoluteFile());        
            Clip clip = AudioSystem.getClip(); 
            clip.open(audioInputStream); 
            clip.start();
