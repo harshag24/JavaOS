@@ -37,3 +37,6 @@
  9. Browser - It opens up Microsoft edge browser with www.google.com as its default page.
  
  To use this on your computer run FirstPage.java and enter username - "harsh" and password - "password"
+
+[![My github stats](https://github-readme-stats.vercel.app/api?username=harshag24)](https://github.com/harshag24/github-readme-stats)
+
