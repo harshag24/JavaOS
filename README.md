@@ -20,6 +20,8 @@
  
  5. Terminal
  ![](images/CommandPrompt.png)
+ Here is a sample command - ipconfig
+ ![](images/CommandPrompt%20-%20ex.png)
  
  6. About 
  ![](images/About.png)
